@@ -1,4 +1,4 @@
-import aboutImage from "@/assets/about-butcher.jpg";
+import aboutImage from "@/assets/local.jpg";
 import { Award, Users, MapPin, Heart } from "lucide-react";
 
 const About = () => {

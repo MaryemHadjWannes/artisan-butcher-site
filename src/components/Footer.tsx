@@ -8,11 +8,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="space-y-4">
-            <h3 className="text-xl font-serif font-bold text-primary-light">
-              Boucherie Artisanale
+            <h3 className="text-2xl font-extrabold font-serif" style={{ color: '#BB1D2B', letterSpacing: '0.04em' }}>
+              BOUCHERIE L'ORIENTALE
             </h3>
             <p className="text-sm text-secondary-foreground/80">
-              Votre boucher de confiance depuis 1985. Qualité, tradition et savoir-faire artisanal.
+              Boucherie et charcuterie halal à Valenciennes.<br />Qualité, tradition et savoir-faire artisanal.
             </p>
           </div>
 
@@ -49,12 +49,12 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-1 flex-shrink-0 text-primary-light" />
-                <span>123 Rue de la Boucherie<br />75001 Paris, France</span>
+                <span>Boucherie et charcuterie l'Orientale halal<br />59300 Valenciennes, France</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 flex-shrink-0 text-primary-light" />
-                <a href="tel:+33123456789" className="hover:text-primary-light transition-colors">
-                  01 23 45 67 89
+                <a href="tel:+33361411004" className="hover:text-primary-light transition-colors">
+                  +33 3 61 41 10 04
                 </a>
               </li>
               <li className="flex items-center space-x-2">
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-secondary-foreground/20 text-center text-sm text-secondary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} Boucherie Artisanale. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} BOUCHERIE L'ORIENTALE. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

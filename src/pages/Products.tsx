@@ -1,15 +1,26 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ProductCard from "@/components/ProductCard";
 import { products, categories } from "@/data/mockProducts";
 import { Button } from "@/components/ui/button";
 
 const Products = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Tous");
 
+  const [selectedCategory, setSelectedCategory] = useState("Tous");
+  const [dynamicProducts, setDynamicProducts] = useState([]);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("adminProducts");
+    if (stored) {
+      const arr = JSON.parse(stored);
+      setDynamicProducts(arr.filter((p: any) => p.visible !== false));
+    }
+  }, []);
+
+  const allProducts = [...products, ...dynamicProducts];
   const filteredProducts =
     selectedCategory === "Tous"
-      ? products
-      : products.filter((product) => product.category === selectedCategory);
+      ? allProducts
+      : allProducts.filter((product) => product.category === selectedCategory);
 
   return (
     <main className="min-h-screen py-12 bg-background">

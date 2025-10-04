@@ -92,12 +92,11 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Adresse</h3>
                     <address className="text-muted-foreground not-italic">
-                      123 Rue de la Boucherie<br />
-                      75001 Paris, France
+                      Boucherie et charcuterie l'Orientale halal<br />
+                      6 Rue de Selles, 59400 Cambrai, France
                     </address>
                   </div>
                 </article>
-
                 <article className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Phone className="h-6 w-6 text-primary" />
@@ -105,14 +104,13 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Téléphone</h3>
                     <a
-                      href="tel:+33123456789"
+                      href="tel:+33361411004"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      01 23 45 67 89
+                      +33 3 61 41 10 04
                     </a>
                   </div>
                 </article>
-
                 <article className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Mail className="h-6 w-6 text-primary" />
@@ -127,7 +125,6 @@ const Contact = () => {
                     </a>
                   </div>
                 </article>
-
                 <article className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                     <Clock className="h-6 w-6 text-primary" />
@@ -143,22 +140,7 @@ const Contact = () => {
                 </article>
               </div>
             </div>
-
-            {/* Map */}
-            <div className="rounded-lg overflow-hidden shadow-card h-80 bg-muted">
-              <iframe
-                title="Localisation de la boucherie"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.3292441156746895!3d48.858370079287466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1234567890123"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
           </section>
-
           {/* Contact Form */}
           <section>
             <div className="bg-card p-8 rounded-lg border shadow-card">
@@ -245,6 +227,21 @@ const Contact = () => {
               </form>
             </div>
           </section>
+        </div>
+        {/* Map en dessous de tout */}
+        <div className="max-w-6xl mx-auto mt-12">
+          <div className="rounded-lg overflow-hidden shadow-card h-80 bg-muted">
+            <iframe
+              title="Localisation de la boucherie"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2554.965905136207!2d3.230951177212706!3d50.180473799999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2bb428c063805%3A0x6661c8d1d98c0488!2sBoucherie%20et%20charcuterie%20l&#39;Orientale%20halal!5e0!3m2!1sfr!2stn!4v1759491771919!5m2!1sfr!2stn"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
         </div>
       </div>
     </main>
